@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Website Forms</title>
+</head>
+<body>
+        <div class="container">
+            <h1>Students Registration Form</h1>
+            <!--Form Inputs Fields-->
+            <form action="#" method="post" class="form">
+                    <div class="input-box">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Enter your fisrt name" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="middleName">Middle Name:</label>
+                        <input type="text" name="middlename" id="middleName" placeholder="Enter your middle name">
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" required placeholder="Enter your last name">
+                    </div>
+                    <div class="input-box">
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email" required placeholder="Enter your email address">
+                    </div>
+                    <div class="input-box">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required placeholder="Create a password">
+                    </div>
+                    <div class="input-box">
+                        <label for="confirmPassword">Confirm Password:</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm the password you created">
+                    </div>
+                    <div class="input-box">
+                        <label for="dateofbirth">Date of Birth</label>
+                        <input type="date" name="dateofbirth" id="dateofbirth" min="1963-01-01" max="2023-12-31" required>
+                    </div>
+                    <div>
+                        <textarea name="message" id="message" placeholder="Write your message" cols="30" rows="10"></textarea>
+                    </div>
+                    <!--Gender Options-->
+                    <div class="gender-option">
+                        <h3>Gender</h3>
+                        <div class="gender">
+                            <input type="radio" id="male" name="gender" value="male" required>
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="gender">
+                            <input type="radio" id="female" name="gender" value="female" required>
+                            <label for="female">Female</label>
+                        </div>
+                        <div class="gender">
+                            <input type="radio" id="other" name="gender" value="other" required>
+                            <label for="other">Other</label>
+                        </div>
+                    </div>
+                    <!--Contry Selection-->
+                    <div class="select-box">
+                        <label for="country">Select your country:</label>
+                        <select id="country" name="country">
+                            <option value="USA">Ghana</option>
+                            <option value="Canada">Nigeria</option>
+                            <option value="UK"> Kenya</option>
+                            <option value="Australia">Senegal</option>
+                            <option value="Germany">Rwanda</option>
+                        </select>
+                    </div>
+                    <!--Terms of agreement-->
+                <div class="terms">
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms">
+                        I agree to the <a href="#" target="_blank">Terms and Conditions</a>
+                    </label>
+                </div>
+
+                <input type="submit" value="Submit" class="submit">
+            </form>
+        </div>
+</body>
+</html>
